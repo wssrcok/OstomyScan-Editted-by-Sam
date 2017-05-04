@@ -1,0 +1,10 @@
+/* 
+  Strings.strings
+  OstomyScan
+
+  Created by Lucas Cauthen on 1/17/17.
+  Copyright © 2017 OstomyTech. All rights reserved.
+*/
+"email_password_req_error" = "Please enter an email and a password";
+"email_req_error" = "Please enter a valid email address into the field below";
+"password_req__error" = "Please enter a password into the field below";

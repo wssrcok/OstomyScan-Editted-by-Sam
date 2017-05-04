@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Dod-k9-J44">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zbb-7Z-jVP">
+                                <rect key="frame" x="-54.5" y="128.5" width="429" height="223"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="wcg-NB-FAT">
+                                        <rect key="frame" x="20" y="20" width="389" height="71"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Structure Sensor Logo" translatesAutoresizingMaskIntoConstraints="NO" id="CxA-M8-vAh">
+                                        <rect key="frame" x="244" y="115" width="165" height="92"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="165" id="74k-oD-7ZS"/>
+                                            <constraint firstAttribute="height" constant="92" id="Ah6-vn-sDV"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="wcg-NB-FAT" firstAttribute="trailing" secondItem="CxA-M8-vAh" secondAttribute="trailing" id="RFq-0j-btg"/>
+                                    <constraint firstItem="wcg-NB-FAT" firstAttribute="centerX" secondItem="zbb-7Z-jVP" secondAttribute="centerX" id="URa-wa-OFw"/>
+                                    <constraint firstItem="wcg-NB-FAT" firstAttribute="top" secondItem="zbb-7Z-jVP" secondAttribute="top" constant="20" id="alm-tv-zkR"/>
+                                    <constraint firstItem="wcg-NB-FAT" firstAttribute="leading" secondItem="zbb-7Z-jVP" secondAttribute="leading" constant="20" id="c16-YA-zyT"/>
+                                    <constraint firstAttribute="bottom" secondItem="CxA-M8-vAh" secondAttribute="bottom" constant="16" id="mj5-hY-JZm"/>
+                                    <constraint firstItem="CxA-M8-vAh" firstAttribute="top" secondItem="wcg-NB-FAT" secondAttribute="bottom" constant="24" id="zT3-Ni-qF9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90980392160000001" green="0.91372549020000005" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zbb-7Z-jVP" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="gMH-xx-stm"/>
+                            <constraint firstItem="zbb-7Z-jVP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vFS-RY-knC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gZb-ZM-Xqj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864.2578125" y="374.23133235724742"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tqJ-Bt-Bfr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Dod-k9-J44" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wX5-KW-dlC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="01J-lp-oVM" kind="relationship" relationship="rootViewController" id="bgi-6W-NI8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FpQ-Ir-QjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="389" height="71"/>
+        <image name="Structure Sensor Logo" width="522" height="303"/>
+    </resources>
+</document>

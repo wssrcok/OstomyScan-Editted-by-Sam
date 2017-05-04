@@ -1,0 +1,10 @@
+framework module Cleanse {
+  umbrella header "Cleanse.h"
+
+  export *
+  module * { export * }
+}
+
+module Cleanse.Swift {
+    header "Cleanse-Swift.h"
+}

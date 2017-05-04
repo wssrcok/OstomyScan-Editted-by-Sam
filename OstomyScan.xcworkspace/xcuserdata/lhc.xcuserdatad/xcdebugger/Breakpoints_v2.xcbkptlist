@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OstomyScan/MeshViewController.swift"
+            timestampString = "509494756.544611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "MeshViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OstomyScan.MeshViewController.meshViewerMessageLabel.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "OstomyScan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lhc/Google%20Drive/Research/SEAL/OstomyScan/OstomyScan/MeshViewController.swift"
+                  timestampString = "509495801.995139"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OstomyScan.MeshViewController.meshViewerMessageLabel.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "OstomyScan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lhc/Google%20Drive/Research/SEAL/OstomyScan/OstomyScan/MeshViewController.swift"
+                  timestampString = "509495801.996948"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OstomyScan.MeshViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;OstomyScan.MeshViewController&gt;"
+                  moduleName = "OstomyScan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lhc/Google%20Drive/Research/SEAL/OstomyScan/OstomyScan/MeshViewController.swift"
+                  timestampString = "509495801.998501"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "564">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OstomyScan/StoreScanImage.swift"
+            timestampString = "510091643.063904"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "StoreScanImage"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "globalinit_33_C32DA3178CCD2C366B53100BD9F16641_func0"
+                  moduleName = "OstomyScan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lhc/Google%20Drive/Research/SEAL/OstomyScan/OstomyScan/StoreScanImage.swift"
+                  timestampString = "510016932.009393"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OstomyScan.StoreScanImage.FILENAME.unsafeMutableAddressor : Swift.String"
+                  moduleName = "OstomyScan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lhc/Google%20Drive/Research/SEAL/OstomyScan/OstomyScan/StoreScanImage.swift"
+                  timestampString = "510016932.010726"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static OstomyScan.StoreScanImage.FILENAME.getter : Swift.String"
+                  moduleName = "OstomyScan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lhc/Google%20Drive/Research/SEAL/OstomyScan/OstomyScan/StoreScanImage.swift"
+                  timestampString = "510016932.011996"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OstomyScan/StoreScanImage.swift"
+            timestampString = "510091910.263289"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "214"
+            endingLineNumber = "214"
+            landmarkName = "saveJpegFromRGBABuffer(_:src_buffer:width:height:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

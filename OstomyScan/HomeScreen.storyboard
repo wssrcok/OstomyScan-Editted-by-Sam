@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1CA-Gf-oj7">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="reQ-4U-RES">
+            <objects>
+                <tableViewController id="vo1-JI-zQa" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="74" sectionHeaderHeight="28" sectionFooterHeight="28" id="Af1-lS-RMd">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.88627450980392153" green="0.89411764705882346" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="k5L-86-AXX" customClass="MenuTableViewCell" customModule="OstomyScan" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="1024" height="74"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k5L-86-AXX" id="hb3-uJ-Hht">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="73.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uao-CM-CFT">
+                                            <rect key="frame" x="0.0" y="7" width="1024" height="58"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                            <inset key="contentEdgeInsets" minX="25" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <inset key="titleEdgeInsets" minX="25" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="Home" image="Home">
+                                                <color key="titleColor" red="0.098039215690000001" green="0.37254901959999998" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="uao-CM-CFT" firstAttribute="bottom" secondItem="hb3-uJ-Hht" secondAttribute="bottomMargin" id="7NQ-pj-NED"/>
+                                        <constraint firstAttribute="trailing" secondItem="uao-CM-CFT" secondAttribute="trailing" id="bsn-Od-YMk"/>
+                                        <constraint firstItem="uao-CM-CFT" firstAttribute="centerY" secondItem="hb3-uJ-Hht" secondAttribute="centerY" id="mD8-Du-FRN"/>
+                                        <constraint firstItem="uao-CM-CFT" firstAttribute="leading" secondItem="hb3-uJ-Hht" secondAttribute="leading" id="qP0-4z-dEo"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="menuButton" destination="uao-CM-CFT" id="blx-ah-nvU"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="Xg5-5f-TXt"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QWL-Ud-eWj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="668" y="19.340329835082461"/>
+        </scene>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="hjj-Kq-yKT">
+            <objects>
+                <navigationController storyboardIdentifier="RightMenuNavigationController" navigationBarHidden="YES" id="7ik-MB-OUN" customClass="UISideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Jsd-bS-cPc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="wTD-Ix-SGh">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="vo1-JI-zQa" kind="relationship" relationship="rootViewController" id="k8K-Qj-AuC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6hJ-6W-ofG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-124" y="19"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="T8j-sd-TAb">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="1CA-Gf-oj7" customClass="HomeVC" customModule="OstomyScan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Ye-Yt-cVa"/>
+                        <viewControllerLayoutGuide type="bottom" id="gzg-fO-lZn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Iij-Q9-DU5">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="yJ9-ZS-x0A">
+                                <rect key="frame" x="140" y="28" width="504" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="6RH-2Y-zwT"/>
+                                    <constraint firstAttribute="width" constant="504" id="tyv-pL-c1x"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uub-0V-fNC">
+                                <rect key="frame" x="979" y="60" width="25" height="25"/>
+                                <state key="normal" image="Menu-64"/>
+                                <connections>
+                                    <action selector="menuClicked:" destination="1CA-Gf-oj7" eventType="touchUpInside" id="Ifv-pM-z3M"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AS3-Nc-owz" userLabel="EmptyView">
+                                <rect key="frame" x="387" y="259" width="250" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="No Recent Scans" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLN-E9-xXH">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="150"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Empty" translatesAutoresizingMaskIntoConstraints="NO" id="srj-64-NdW">
+                                        <rect key="frame" x="0.0" y="150" width="250" height="100"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fLN-E9-xXH" firstAttribute="centerX" secondItem="AS3-Nc-owz" secondAttribute="centerX" id="EXY-zi-Kq2"/>
+                                    <constraint firstAttribute="width" constant="250" id="pIp-tD-UzT"/>
+                                    <constraint firstAttribute="height" constant="250" id="qUz-5b-CUO"/>
+                                </constraints>
+                            </stackView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qxH-Ci-cc3">
+                                <rect key="frame" x="386" y="334" width="250" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="330" id="JaQ-SV-xtx"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="650" id="Whq-gg-Adj"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ZwU-RQ-YjB">
+                                <rect key="frame" x="352" y="608" width="320" height="135"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hvt-SO-1ju" userLabel="Purchase">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                        <color key="backgroundColor" red="0.098039215690000001" green="0.37254901959999998" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="ATB-9b-XMZ"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="XsS-0V-rei"/>
+                                            <constraint firstAttribute="height" constant="60" id="qqT-KK-9dx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Purchase">
+                                            <color key="titleColor" red="0.95294117649999999" green="0.49803921569999998" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="purchaseClicked:" destination="1CA-Gf-oj7" eventType="touchUpInside" id="qmg-A3-ZEX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHy-y4-zT1">
+                                        <rect key="frame" x="0.0" y="75" width="320" height="60"/>
+                                        <color key="backgroundColor" red="0.098039215690000001" green="0.37254901959999998" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="5uy-mo-RXf"/>
+                                            <constraint firstAttribute="height" constant="60" id="HrU-YX-2fG"/>
+                                            <constraint firstAttribute="width" constant="320" id="cgV-P8-Wq3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Scan" image="ScanIcon">
+                                            <color key="titleColor" red="0.95294117649999999" green="0.49803921569999998" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="scanClicked:" destination="1CA-Gf-oj7" eventType="touchUpInside" id="a7u-Hh-3AY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wHy-y4-zT1" firstAttribute="top" secondItem="Hvt-SO-1ju" secondAttribute="bottom" constant="15" id="GG8-dQ-mFC"/>
+                                    <constraint firstItem="Hvt-SO-1ju" firstAttribute="top" secondItem="ZwU-RQ-YjB" secondAttribute="top" id="iKj-Oa-MtN"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88627450980392153" green="0.89411764705882346" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Uub-0V-fNC" firstAttribute="top" secondItem="Iij-Q9-DU5" secondAttribute="topMargin" constant="60" id="8hi-CO-Evi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uub-0V-fNC" secondAttribute="trailing" id="At4-Gm-R54"/>
+                            <constraint firstItem="qxH-Ci-cc3" firstAttribute="centerX" secondItem="Iij-Q9-DU5" secondAttribute="centerX" id="Bf0-DG-SMb"/>
+                            <constraint firstItem="qxH-Ci-cc3" firstAttribute="centerY" secondItem="Iij-Q9-DU5" secondAttribute="centerY" id="GhO-fj-Lxt"/>
+                            <constraint firstItem="AS3-Nc-owz" firstAttribute="centerX" secondItem="Iij-Q9-DU5" secondAttribute="centerX" id="WpT-dt-plx"/>
+                            <constraint firstItem="ZwU-RQ-YjB" firstAttribute="centerX" secondItem="Iij-Q9-DU5" secondAttribute="centerX" id="eim-AO-qco"/>
+                            <constraint firstItem="gzg-fO-lZn" firstAttribute="top" secondItem="ZwU-RQ-YjB" secondAttribute="bottom" constant="25" id="f8E-Mc-p37"/>
+                            <constraint firstItem="yJ9-ZS-x0A" firstAttribute="leading" secondItem="Iij-Q9-DU5" secondAttribute="leadingMargin" constant="120" id="gBP-pX-uGa"/>
+                            <constraint firstItem="AS3-Nc-owz" firstAttribute="centerY" secondItem="Iij-Q9-DU5" secondAttribute="centerY" id="gim-yV-xKA"/>
+                            <constraint firstItem="yJ9-ZS-x0A" firstAttribute="top" secondItem="2Ye-Yt-cVa" secondAttribute="bottom" constant="8" symbolic="YES" id="pN4-nM-Ip5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emptyView" destination="AS3-Nc-owz" id="jao-mx-6es"/>
+                        <outlet property="purchaseButton" destination="Hvt-SO-1ju" id="dUY-8i-UAg"/>
+                        <outlet property="scanImage" destination="qxH-Ci-cc3" id="93C-L7-l3x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jQp-oV-Qoz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1075.1953125" y="16.40625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Empty" width="100" height="100"/>
+        <image name="Home" width="25" height="25"/>
+        <image name="Logo" width="389" height="71"/>
+        <image name="Menu-64" width="25" height="25"/>
+        <image name="ScanIcon" width="37" height="37"/>
+    </resources>
+</document>
